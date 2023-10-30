@@ -25,6 +25,7 @@ export default function Project({
 
   return (
     <motion.div 
+    id="projects"
     ref={ref}
     style={{
       scale: scaleProgress,
