@@ -9,9 +9,12 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+
+ const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -78,6 +81,10 @@ export default function Intro() {
         <Link
           href="#contact"
           className="bg-gray-900 group text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <span className="opacity-80 hover:opacity-100 group-hover:translate-x-1 transition">
@@ -86,7 +93,7 @@ export default function Intro() {
         </Link>
         <a
           href="/CV.pdf"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition  cursor-pointer border border-black/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition  cursor-pointer borderBlack dark:bg-white/10"
           download={true}
         >
           Download CV{" "}
@@ -96,7 +103,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/febrian-bayu-nugroho-ba044a1a0/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer border border-black/10 "
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer borderBlack dark:bg-white/10  dark:text-white/60"
         >
           <BsLinkedin />
         </a>
@@ -104,7 +111,7 @@ export default function Intro() {
           href="https://github.com/fbrnngrh"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer border border-black/10 "
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>
@@ -112,7 +119,7 @@ export default function Intro() {
           href="https://www.instagram.com/fbrnngrh_/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer border border-black/10"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition  cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <AiFillInstagram />
         </a>
