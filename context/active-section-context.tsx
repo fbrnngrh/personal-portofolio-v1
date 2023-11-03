@@ -18,7 +18,7 @@ type ActiveSectionContextType = {
 
 const ActiveSectionContext = createContext<ActiveSectionContextType| null>(null);
 
-export default function ActiveSectionContextProfider({
+export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProfiderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");

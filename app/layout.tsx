@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-import ActiveSectionContextProfider from "@/context/active-section-context";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
@@ -30,13 +30,14 @@ export default function RootLayout({
         <div className="bg-[#dbd7fb] absolute bottom-[5rem] left-[-35rem] h-[31.25rem] -z-10 w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem]  md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394] "></div>
         <div className="bg-[#dbd7fb] absolute bottom-[6rem] right-[11rem] h-[31.25rem] w-[31.25rem] -z-10 rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#676394] "></div>
         <ThemeContextProvider>
-          <ActiveSectionContextProfider>
+          <ActiveSectionContextProvider>
             <Header />
             {children}
             <Footer />
+
             <Toaster position="top-right" />
             <ThemeSwitch />
-          </ActiveSectionContextProfider>
+          </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
     </html>
