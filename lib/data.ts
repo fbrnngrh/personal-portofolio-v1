@@ -38,7 +38,7 @@ export const experiencesData = [
     description:
       "I graduated after 3.5 years of studying at Politeknik Negeri Tanah Laut. I immediately found a job as a front-end developer",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020-2023",
   },
   {
     title: "Freelance Web Developer",
