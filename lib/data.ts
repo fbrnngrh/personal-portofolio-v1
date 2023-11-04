@@ -33,46 +33,53 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Study",
+    location: "Pelaihari, ID",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 3.5 years of studying at Politeknik Negeri Tanah Laut. I immediately found a job as a front-end developer",
     icon: React.createElement(LuGraduationCap),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Freelance Web Developer",
+    location: "Pelaihari, ID",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a Web developer for 6 Month in Batuah Talenta Semesta . I also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Internship Programmer",
+    location: "Banjarmasin, ID",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a intern programmer at PT. Trio Motor. I'm working on a project with PHP and JavaScript..",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Coming Soon",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "coming soon project",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: dummyImg,
   },
   {
-    title: "CorpComment",
+    title: "Coming Soon",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "coming soon project",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: dummyImg,
   },
+    {
+      title: "Coming Soon",
+      description:
+        "coming soon project",
+      tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      imageUrl: dummyImg,
+    },
 ] as const;
 
 export const skillsData = [
