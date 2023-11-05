@@ -31,9 +31,7 @@
 - styles: Tailwind CSS styles
 - public: Static assets
 
-## Demo
-
-- [Live demo](www.devbyfebrian.tech)
+## [Live Demo](devbyfebrian.tech)
 
 ## Preview
 
