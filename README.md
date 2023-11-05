@@ -37,8 +37,8 @@
 
 ## Preview
 
-![Preview](https://user-images.githubusercontent.com/47147484/131236939-8a9e0b37-7b8c-4b9e-8b41-0e0b2e3e6b5e.png)
+![Preview](./public/screencapture-devbyfebrian-tech-2023-11-05-19_49_58.png)
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](
+This project is licensed under the MIT License. See the [LICENSE]
